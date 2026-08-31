@@ -1,0 +1,8 @@
+laser_filter:
+  ros__parameters:
+    filter1:
+      name: footprint_filter
+      type: laser_filters/LaserScanFootprintFilter
+      params:
+        # Defines the 4 corners of your robot relative to the lidar
+        footprint: "[[0.10, 0.35], [0.10, -0.35], [-1.05, -0.35], [-1.05, 0.35]]"
