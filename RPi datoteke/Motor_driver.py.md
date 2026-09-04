@@ -1,4 +1,4 @@
-       #!/usr/bin/env python3
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
 import serial
@@ -13,8 +13,6 @@ from tf2_ros import TransformBroadcaster
 class MiljenkoMotorDriver(Node):
     def __init__(self):
         super().__init__('motor_driver')
-
-        # --- Robot Constants (From your paletar_odometry files) ---
 
        self.L = 0.578              # Track width (meters)
         self.TICK_TO_M = 0.00095    # Conversion factor (meters per tick)
