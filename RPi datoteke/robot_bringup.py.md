@@ -16,7 +16,7 @@ def generate_launch_description():
       </joint>
     </robot>
     """
-
+    
     # 1. LIDAR NODE (Forced initialization for A1)
     rplidar_node = Node(
         package='rplidar_ros',
